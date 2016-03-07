@@ -1,0 +1,46 @@
+<alps>
+  <doc>
+    Sample ALPS document for TASK APP
+  </doc>
+
+  <!-- data elements -->
+  <descriptor id="id" type="semantic" />
+  <descriptor id="title" type="semantic" />
+  <descriptor id="completed" type="semantic" />
+
+  <!-- CRUD actions -->
+  <descriptor id="createTask" type="unsafe">
+    <descriptor href="#title" />
+    <descriptor href="#completed" />    
+  </descriptor>
+
+  <descriptor id="readTask" type="safe">
+    <descriptor href="#id" />    
+  </descriptor>
+
+  <descriptor id="updateTask" type="idempotent">
+    <descriptor href="#id" />    
+    <descriptor href="#title" />
+    <descriptor href="#completed" />    
+  </descriptor>
+  
+  <descriptor id="deleteTask" type="idempotent">
+    <descriptor href="#id" />    
+  </descriptor>
+
+  <!-- other actions -->
+  <descriptor id="listAll" type="safe" />
+
+  <descriptor id="listActive" type="safe">
+    <descriptor href="#completed" />    
+  </descriptor>
+
+  <descriptor id="listCompleted" type="safe">
+    <descriptor href="#completed" />    
+  </descriptor>
+
+  <descriptor id="findByName" type="safe">
+    <descriptor href="#title" />
+  </descriptor>
+
+</alps>

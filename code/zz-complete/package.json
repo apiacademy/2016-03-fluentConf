@@ -1,0 +1,30 @@
+{
+  "name": "ORMHyperToDo",
+  "version": "1.0.0",
+  "description": "Hypermedia ToDo Service & Client for 2016-03 ORM fluentConf",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "0.10.25"
+  },
+  "dependencies" : { 
+    "uritemplate" : "0.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apiacademy/2016-fluentConf.git"
+  },
+  "keywords": [
+    "Hypermedia", 
+    "REST", 
+    "O'Reilly", 
+    "ORM", 
+    "Collection+JSON", 
+    "Cj", 
+    "Microservice",
+    "fluent"
+  ],
+  "license": "MIT"
+}
